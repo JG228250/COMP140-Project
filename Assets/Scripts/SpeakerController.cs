@@ -17,11 +17,11 @@ public class SpeakerController : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
-            transform.Rotate(new Vector3(0, 0, -30 * speed * Time.deltaTime));
+            transform.Rotate(new Vector3(0, 0, -10 * speed * Time.deltaTime));
         }
         if(Input.GetKey("s"))
         {
-            transform.Rotate(new Vector3(0, 0, +30 * speed * Time.deltaTime));
+            transform.Rotate(new Vector3(0, 0, +10 * speed * Time.deltaTime));
         }
     }
 }
