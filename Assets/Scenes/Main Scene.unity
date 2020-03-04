@@ -301,7 +301,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 7657604164331503366, guid: cf04fdeacde64934fa8760b28556ad7f,
+  enemySpawner: {fileID: 0}
+  redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
+    type: 3}
+  greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
+    type: 3}
+  purpleEnemy: {fileID: 7657604164331503366, guid: cf04fdeacde64934fa8760b28556ad7f,
+    type: 3}
+  blueEnemy: {fileID: 8414656683670359176, guid: f59a6125b509a5a41a5520d9dce7f800,
     type: 3}
 --- !u!4 &377201589
 Transform:
@@ -428,7 +435,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
+  enemySpawner: {fileID: 0}
+  redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
+    type: 3}
+  greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
+    type: 3}
+  purpleEnemy: {fileID: 7657604164331503366, guid: cf04fdeacde64934fa8760b28556ad7f,
+    type: 3}
+  blueEnemy: {fileID: 8414656683670359176, guid: f59a6125b509a5a41a5520d9dce7f800,
     type: 3}
 --- !u!4 &681410574
 Transform:
@@ -518,7 +532,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 8414656683670359176, guid: f59a6125b509a5a41a5520d9dce7f800,
+  enemySpawner: {fileID: 0}
+  redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
+    type: 3}
+  greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
+    type: 3}
+  purpleEnemy: {fileID: 7657604164331503366, guid: cf04fdeacde64934fa8760b28556ad7f,
+    type: 3}
+  blueEnemy: {fileID: 8414656683670359176, guid: f59a6125b509a5a41a5520d9dce7f800,
     type: 3}
 --- !u!4 &965373238
 Transform:
@@ -577,7 +598,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
+  enemySpawner: {fileID: 0}
+  redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
+    type: 3}
+  greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
+    type: 3}
+  purpleEnemy: {fileID: 7657604164331503366, guid: cf04fdeacde64934fa8760b28556ad7f,
+    type: 3}
+  blueEnemy: {fileID: 8414656683670359176, guid: f59a6125b509a5a41a5520d9dce7f800,
     type: 3}
 --- !u!1 &1384157009
 GameObject:
