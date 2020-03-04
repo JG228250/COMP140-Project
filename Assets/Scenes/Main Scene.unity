@@ -301,7 +301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 0}
   redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
     type: 3}
   greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
@@ -318,7 +317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377201587}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1100, y: 140, z: 800}
+  m_LocalPosition: {x: 1100, y: 140, z: 917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -365,18 +364,18 @@ Camera:
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_GateFitMode: 2
-  m_FocalLength: 50
+  m_FocalLength: 9.899364
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.77
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  near clip plane: 0.01
+  far clip plane: 1172.9
+  field of view: 54.91239
+  orthographic: 1
+  orthographic size: 501.6222
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -400,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 145, z: 0}
+  m_LocalPosition: {x: 37, y: 347, z: -49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -435,7 +434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 0}
   redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
     type: 3}
   greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
@@ -452,7 +450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681410572}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1100, y: 320, z: 800}
+  m_LocalPosition: {x: 1100, y: 320, z: 917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -501,7 +499,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93fea8d574797f74387bbbce8e8b561f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerWeapon: {fileID: 1271767284523684023, guid: 9f7394c32810bfa44ba13fb36b297ecb,
+  redAttack: {fileID: 1271767284523684023, guid: 9f7394c32810bfa44ba13fb36b297ecb,
+    type: 3}
+  greenAttack: {fileID: 3812798576533413637, guid: ff15bb77ef9de2745a26d9cce18949be,
+    type: 3}
+  purpleAttack: {fileID: 8293524357830793489, guid: ccb39eaac6ec44148927e69f1d889b9d,
+    type: 3}
+  blueAttack: {fileID: 1858136844358634846, guid: 4a2fa23a7c4d4484cb2c8e4eb1b5f885,
     type: 3}
 --- !u!1 &965373236
 GameObject:
@@ -532,7 +536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 0}
   redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
     type: 3}
   greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,
@@ -549,7 +552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965373236}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1100, y: -40, z: 800}
+  m_LocalPosition: {x: 1100, y: -40, z: 917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -580,7 +583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187323708}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1100, y: 500, z: 800}
+  m_LocalPosition: {x: 1100, y: 500, z: 917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -598,7 +601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979ff78388d9eb44e9894f35e0d8bed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 0}
   redEnemy: {fileID: 7680075630185291004, guid: b683e1469448a25489ca8b3d4e5cab55,
     type: 3}
   greenEnemy: {fileID: 1850850503502398987, guid: 4a48641c3b27a40429c0a062ad3662c5,

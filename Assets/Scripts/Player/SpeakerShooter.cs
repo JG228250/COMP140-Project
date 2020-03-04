@@ -5,7 +5,12 @@ using UnityEngine.UI;
 
 public class SpeakerShooter : MonoBehaviour
 {
-    public Transform speakerWeapon;
+    private Transform speakerWeapon;
+
+    public Transform redAttack;
+    public Transform greenAttack;
+    public Transform purpleAttack;
+    public Transform blueAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +21,24 @@ public class SpeakerShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("up"))
         {
+            speakerWeapon = redAttack;
+            Instantiate(speakerWeapon, transform.position, transform.rotation);
+        }
+        if (Input.GetKeyDown("left"))
+        {
+            speakerWeapon = greenAttack;
+            Instantiate(speakerWeapon, transform.position, transform.rotation);
+        }
+        if (Input.GetKeyDown("down"))
+        {
+            speakerWeapon = purpleAttack;
+            Instantiate(speakerWeapon, transform.position, transform.rotation);
+        }
+        if (Input.GetKeyDown("right"))
+        {
+            speakerWeapon = blueAttack;
             Instantiate(speakerWeapon, transform.position, transform.rotation);
         }
     }

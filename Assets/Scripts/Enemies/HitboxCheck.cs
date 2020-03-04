@@ -23,7 +23,7 @@ public class HitboxCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (hitmarkerType == Hitmarker.Boundary && other.gameObject.tag == "Enemy")
+        if (hitmarkerType == Hitmarker.Boundary && (other.gameObject.tag == "EnemyRed" || other.gameObject.tag == "EnemyGreen" || other.gameObject.tag == "EnemyPurple" || other.gameObject.tag == "EnemyBlue"))
         {
             playerHealth -= 1;
         }

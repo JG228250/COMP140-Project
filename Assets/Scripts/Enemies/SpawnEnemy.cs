@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour
 {
     private float time = 0.0f;
-    public Transform enemySpawner;
+    private Transform enemySpawner;
 
     public Transform redEnemy;
     public Transform greenEnemy;
@@ -22,7 +22,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         Random rnd = new Random();
         time += Time.deltaTime;
-        if (time >= Random.Range(1, 11))
+        if (time >= Random.Range(3, 11))
         {
             Transform[] enemies = {
             redEnemy,

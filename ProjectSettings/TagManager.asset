@@ -4,8 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
   - Boundary
+  - WeaponRed
+  - WeaponGreen
+  - WeaponPurple
+  - WeaponBlue
+  - EnemyRed
+  - EnemyGreen
+  - EnemyPurple
+  - EnemyBlue
   layers:
   - Default
   - TransparentFX

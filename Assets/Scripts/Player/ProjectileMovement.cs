@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProjectileMovement : MonoBehaviour
 {
-    private float speed = 500.0f;
+    private float speed = 750.0f;
     private float time = 0.0f;
     // Start is called before the first frame update
     void Start()
@@ -26,5 +26,13 @@ public class ProjectileMovement : MonoBehaviour
     private void OnCollisionEnter(Collision col)
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
     }
 }

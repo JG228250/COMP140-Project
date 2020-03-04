@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3456938587507039660}
   m_Layer: 0
   m_Name: EnemySpawnerBlue
-  m_TagString: Enemy
+  m_TagString: EnemyBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1ab171810273647b96d97f99593bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScore: 0
 --- !u!65 &3456938587507039660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -121,5 +122,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.95, y: 1.17, z: 0}
+  m_Size: {x: 0.95, y: 1.17, z: 500}
   m_Center: {x: 0, y: 0, z: 0}
