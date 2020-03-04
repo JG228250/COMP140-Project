@@ -16,4 +16,12 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Boundary")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

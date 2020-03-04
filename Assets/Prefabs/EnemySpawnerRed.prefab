@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1607566537588064313}
   - component: {fileID: 4484058995921298712}
   - component: {fileID: 4498553389913760972}
+  - component: {fileID: 2946348771595103932}
   m_Layer: 0
-  m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_Name: EnemySpawnerRed
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,3 +110,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1ab171810273647b96d97f99593bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2946348771595103932
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8659636762139360983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63, y: 1.09, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}

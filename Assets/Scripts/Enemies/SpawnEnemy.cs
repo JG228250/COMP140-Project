@@ -16,7 +16,7 @@ public class SpawnEnemy : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (time > 1.0f)
+        if (time >= 1.0f)
         {
             Instantiate(enemySpawner, transform.position, transform.rotation);
             time = 0.0f;
