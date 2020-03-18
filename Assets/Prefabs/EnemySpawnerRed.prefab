@@ -111,6 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScore: 0
+  audioSource: {fileID: 0}
+  hitSFX: {fileID: 0}
 --- !u!65 &2946348771595103932
 BoxCollider:
   m_ObjectHideFlags: 0

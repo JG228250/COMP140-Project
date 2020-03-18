@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     private float speed = 250.0f;
 
-    public int playerScore = 0;
+    public float playerScore = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +21,6 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Boundary")
-        {
-            Destroy(gameObject);
-        }
         if (other.gameObject.tag == "WeaponRed" && gameObject.tag == "EnemyRed")
         {
             Destroy(gameObject);
@@ -44,6 +40,10 @@ public class EnemyMovement : MonoBehaviour
         {
             Destroy(gameObject);
             playerScore += 1;
+        }
+        if (other.gameObject.tag == "Boundary")
+        {
+            Destroy(gameObject);
         }
     }
 }

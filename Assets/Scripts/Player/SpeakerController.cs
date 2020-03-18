@@ -15,13 +15,13 @@ public class SpeakerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("w"))
+        if (Input.GetKey("a"))
         {
-            transform.Rotate(new Vector3(0, 0, -10 * speed * Time.deltaTime));
+            transform.Rotate(new Vector3(0, 0, -20 * speed * Time.deltaTime));
         }
-        if(Input.GetKey("s"))
+        if(Input.GetKey("d"))
         {
-            transform.Rotate(new Vector3(0, 0, +10 * speed * Time.deltaTime));
+            transform.Rotate(new Vector3(0, 0, +20 * speed * Time.deltaTime));
         }
     }
 }
