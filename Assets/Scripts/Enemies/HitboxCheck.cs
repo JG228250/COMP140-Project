@@ -8,11 +8,15 @@ public class HitboxCheck : MonoBehaviour
     public enum Hitmarker {Boundary}
     public Hitmarker hitmarkerType;
 
-    public float playerHealth = 100;
+    public HealthBar healthBar;
+
+    public int maxHealth = 100;
+    public int playerHealth;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -25,7 +29,8 @@ public class HitboxCheck : MonoBehaviour
     {
         if (hitmarkerType == Hitmarker.Boundary && (other.gameObject.tag == "EnemyRed" || other.gameObject.tag == "EnemyGreen" || other.gameObject.tag == "EnemyPurple" || other.gameObject.tag == "EnemyBlue"))
         {
-            playerHealth -= 1;
+            playerHealth -= 10;
+            healthBar.SetHealth(playerHealth);
         }
     }
 }
