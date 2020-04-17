@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
         if (gameOver == false)
         {
             gameOver = true;
-            Debug.Log("Game Over");
             Restart();
         }
     }

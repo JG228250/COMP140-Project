@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Enemies\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemies\HitboxCheck.cs" />
     <Compile Include="Assets\Scripts\Enemies\SpawnEnemy.cs" />
+    <Compile Include="Assets\Scripts\GameManager\BackgroundImage.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameManager\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\Player\HealthBar.cs" />
