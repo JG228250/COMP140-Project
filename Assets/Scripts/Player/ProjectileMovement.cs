@@ -6,12 +6,7 @@ public class ProjectileMovement : MonoBehaviour
 {
     private float speed = 750.0f;
     private float time = 0.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
     // Update is called once per frame
     void Update()
     {

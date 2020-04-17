@@ -12,17 +12,12 @@ public class HitboxCheck : MonoBehaviour
 
     public int maxHealth = 100;
     public int playerHealth;
+    public int minHealth = 0;
     // Start is called before the first frame update
     void Start()
     {
         playerHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +26,10 @@ public class HitboxCheck : MonoBehaviour
         {
             playerHealth -= 10;
             healthBar.SetHealth(playerHealth);
+        }
+        if (playerHealth <= minHealth)
+        {
+            FindObjectOfType<GameManager>().GameOver();
         }
     }
 }
