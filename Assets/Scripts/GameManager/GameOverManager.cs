@@ -12,7 +12,7 @@ public class GameOverManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = "";
+        scoreText.text = PlayerScore.playerScore.ToString();
         Invoke("LoadMainGame", gameOverDelay);
     }
 

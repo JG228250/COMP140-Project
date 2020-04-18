@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\GameManager\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterImage.cs" />
     <Compile Include="Assets\Scripts\Player\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerScore.cs" />
     <Compile Include="Assets\Scripts\Player\ProjectileMovement.cs" />
     <Compile Include="Assets\Scripts\Player\SpeakerController.cs" />
     <Compile Include="Assets\Scripts\Player\SpeakerShooter.cs" />

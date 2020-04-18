@@ -6,7 +6,7 @@ public class ProjectileMovement : MonoBehaviour
 {
     private float speed = 750.0f;
     private float time = 0.0f;
-   
+
     // Update is called once per frame
     void Update()
     {

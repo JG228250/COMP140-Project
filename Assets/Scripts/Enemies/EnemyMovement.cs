@@ -1,34 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyMovement : MonoBehaviour
 {
     private float speed = 250.0f;
 
-    public float playerScore = 0;
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
-    }
+    public static int playerScore;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "WeaponRed" && gameObject.tag == "EnemyRed")
         {
+            PlayerScore.playerScore += 50;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "WeaponGreen" && gameObject.tag == "EnemyGreen")
         {
+            PlayerScore.playerScore += 50;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "WeaponPurple" && gameObject.tag == "EnemyPurple")
         {
+            PlayerScore.playerScore += 50;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "WeaponBlue" && gameObject.tag == "EnemyBlue")
         {
+            PlayerScore.playerScore += 50;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "Boundary")
@@ -36,9 +36,9 @@ public class EnemyMovement : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public string getFinalScore
+    // Update is called once per frame
+    void Update()
     {
-        get { return playerScore.ToString(); }
+        transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
     }
 }

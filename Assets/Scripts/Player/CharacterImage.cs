@@ -8,7 +8,6 @@ public class CharacterImage : MonoBehaviour
     public Sprite pose1;
     public Sprite pose2;
 
-    private float time = 0.0f;
     // Update is called once per frame
     private void Update()
     {

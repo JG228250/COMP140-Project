@@ -17,7 +17,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         Random rnd = new Random();
         time += Time.deltaTime;
-        if (time >= Random.Range(3, 11))
+        if (time >= Random.Range(3, 51))
         {
             Transform[] enemies = {
             redEnemy,
