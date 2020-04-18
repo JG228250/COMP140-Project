@@ -10,9 +10,9 @@ public class HitboxCheck : MonoBehaviour
 
     public HealthBar healthBar;
 
-    public int maxHealth = 100;
+    private int maxHealth = 100;
     public int playerHealth;
-    public int minHealth = 0;
+    private int minHealth = 0;
     // Start is called before the first frame update
     void Start()
     {

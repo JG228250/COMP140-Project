@@ -8,9 +8,11 @@ public class GameOverManager : MonoBehaviour
 {
     public float gameOverDelay = 3f;
 
+    public Text scoreText;
     // Start is called before the first frame update
     void Start()
     {
+        scoreText.text = "";
         Invoke("LoadMainGame", gameOverDelay);
     }
 
