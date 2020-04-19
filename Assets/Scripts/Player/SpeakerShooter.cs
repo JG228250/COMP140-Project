@@ -19,55 +19,75 @@ public class SpeakerShooter : MonoBehaviour
         //This will shoot a certain projectile, depending in the input given.
         if (Input.GetKeyDown("up"))
         {
-            speakerWeapon = redAttack;
-            Instantiate(speakerWeapon, transform.position, transform.rotation);
-            if (MusicBarTimer.time >= comboTime)
-            {
-                EnemyMovement.hitPoints *= 2;
-            }
-            else
-            {
-                EnemyMovement.hitPoints = 10;
-            }
+            RedWeapon();
         }
         if (Input.GetKeyDown("left"))
         {
-            speakerWeapon = greenAttack;
-            Instantiate(speakerWeapon, transform.position, transform.rotation);
-            if (MusicBarTimer.time >= comboTime)
-            {
-                EnemyMovement.hitPoints *= 2;
-            }
-            else
-            {
-                EnemyMovement.hitPoints = 10;
-            }
+            GreenWeapon();
         }
         if (Input.GetKeyDown("down"))
         {
-            speakerWeapon = purpleAttack;
-            Instantiate(speakerWeapon, transform.position, transform.rotation);
-            if (MusicBarTimer.time >= comboTime)
-            {
-                EnemyMovement.hitPoints *= 2;
-            }
-            else
-            {
-                EnemyMovement.hitPoints = 10;
-            }
+            PurpleWeapon();
         }
         if (Input.GetKeyDown("right"))
         {
-            speakerWeapon = blueAttack;
-            Instantiate(speakerWeapon, transform.position, transform.rotation);
-            if (MusicBarTimer.time >= comboTime)
-            {
-                EnemyMovement.hitPoints *= 2;
-            }
-            else
-            {
-                EnemyMovement.hitPoints = 10;
-            }
+            BlueWeapon();
+        }
+    }
+
+    public void RedWeapon()
+    {
+        speakerWeapon = redAttack;
+        Instantiate(speakerWeapon, transform.position, transform.rotation);
+        if (MusicBarTimer.time >= comboTime)
+        {
+            EnemyMovement.hitPoints *= 2;
+        }
+        else
+        {
+            EnemyMovement.hitPoints = 10;
+        }
+    }
+
+    public void GreenWeapon()
+    {
+        speakerWeapon = greenAttack;
+        Instantiate(speakerWeapon, transform.position, transform.rotation);
+        if (MusicBarTimer.time >= comboTime)
+        {
+            EnemyMovement.hitPoints *= 2;
+        }
+        else
+        {
+            EnemyMovement.hitPoints = 10;
+        }
+    }
+
+    public void PurpleWeapon()
+    {
+        speakerWeapon = purpleAttack;
+        Instantiate(speakerWeapon, transform.position, transform.rotation);
+        if (MusicBarTimer.time >= comboTime)
+        {
+            EnemyMovement.hitPoints *= 2;
+        }
+        else
+        {
+            EnemyMovement.hitPoints = 10;
+        }
+    }
+
+    public void BlueWeapon()
+    {
+        speakerWeapon = blueAttack;
+        Instantiate(speakerWeapon, transform.position, transform.rotation);
+        if (MusicBarTimer.time >= comboTime)
+        {
+            EnemyMovement.hitPoints *= 2;
+        }
+        else
+        {
+            EnemyMovement.hitPoints = 10;
         }
     }
 }
