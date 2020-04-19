@@ -4,6 +4,7 @@ public class EnemyMovement : MonoBehaviour
 {
     //Speed of the enemy sprites.
     private float speed = 250.0f;
+    public static int hitPoints = 10;
 
     //Checks if enemy has collided with the projectile weapon.
     public void OnTriggerEnter(Collider other)
@@ -12,22 +13,22 @@ public class EnemyMovement : MonoBehaviour
         //If so, the player is given 50 points, and the enemy sprite/ object is destroyed.
         if (other.gameObject.tag == "WeaponRed" && gameObject.tag == "EnemyRed")
         {
-            PlayerScore.playerScore += 50;
+            PlayerScore.playerScore += hitPoints;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "WeaponGreen" && gameObject.tag == "EnemyGreen")
         {
-            PlayerScore.playerScore += 50;
+            PlayerScore.playerScore += hitPoints;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "WeaponPurple" && gameObject.tag == "EnemyPurple")
         {
-            PlayerScore.playerScore += 50;
+            PlayerScore.playerScore += hitPoints;
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "WeaponBlue" && gameObject.tag == "EnemyBlue")
         {
-            PlayerScore.playerScore += 50;
+            PlayerScore.playerScore += hitPoints;
             Destroy(gameObject);
         }
         //Deletes the enemy sprite if it hits the end boundary.

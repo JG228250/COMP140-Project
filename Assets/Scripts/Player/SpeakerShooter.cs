@@ -11,6 +11,8 @@ public class SpeakerShooter : MonoBehaviour
     public Transform purpleAttack;
     public Transform blueAttack;
 
+    private float comboTime = 0.4f;
+
     // Update is called once per frame
     void Update()
     {
@@ -19,21 +21,53 @@ public class SpeakerShooter : MonoBehaviour
         {
             speakerWeapon = redAttack;
             Instantiate(speakerWeapon, transform.position, transform.rotation);
+            if (MusicBarTimer.time >= comboTime)
+            {
+                EnemyMovement.hitPoints *= 2;
+            }
+            else
+            {
+                EnemyMovement.hitPoints = 10;
+            }
         }
         if (Input.GetKeyDown("left"))
         {
             speakerWeapon = greenAttack;
             Instantiate(speakerWeapon, transform.position, transform.rotation);
+            if (MusicBarTimer.time >= comboTime)
+            {
+                EnemyMovement.hitPoints *= 2;
+            }
+            else
+            {
+                EnemyMovement.hitPoints = 10;
+            }
         }
         if (Input.GetKeyDown("down"))
         {
             speakerWeapon = purpleAttack;
             Instantiate(speakerWeapon, transform.position, transform.rotation);
+            if (MusicBarTimer.time >= comboTime)
+            {
+                EnemyMovement.hitPoints *= 2;
+            }
+            else
+            {
+                EnemyMovement.hitPoints = 10;
+            }
         }
         if (Input.GetKeyDown("right"))
         {
             speakerWeapon = blueAttack;
             Instantiate(speakerWeapon, transform.position, transform.rotation);
+            if (MusicBarTimer.time >= comboTime)
+            {
+                EnemyMovement.hitPoints *= 2;
+            }
+            else
+            {
+                EnemyMovement.hitPoints = 10;
+            }
         }
     }
 }
